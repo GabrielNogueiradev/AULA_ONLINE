@@ -99,10 +99,10 @@ void executar_operacao(Calculadora *calc, double a, double b, char simbolo) {
 
 int main() {
     // Cria objetos das classes derivadas
-    CalcSoma          objSoma = criar_soma();
-    CalcSubtracao     objSub  = criar_subtracao();
+    CalcSoma objSoma = criar_soma();
+    CalcSubtracao objSub = criar_subtracao();
     CalcMultiplicacao objMult = criar_multiplicacao();
-    CalcDivisao       objDiv  = criar_divisao();
+    CalcDivisao objDiv = criar_divisao();
 
     // Mostra resultados de Polimorfismo e Sobrescrita
     executar_operacao((Calculadora*)&objSoma, 15.0, 7.0, '+');
